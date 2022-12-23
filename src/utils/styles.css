@@ -1,54 +1,83 @@
-body{
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
 }
-.App{
-    width: 100vw;
-    height: 100vh;
-    box-sizing: border-box;
-    background-color: rgb(20, 20, 20);
+
+.App {
+  width: 100vw;
+  height: 100vh;
+  box-sizing: border-box;
+  background-color: rgb(20, 20, 20);
 }
-.loading{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 45vh;
-    color: white;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-weight: 700;
-    font-size: 3rem;
-    text-align: center;
-    user-select: none;
+
+.HeaderContainer {
+  background-color: rgb(20, 20, 20);
+  display: inline-block;
+  box-sizing: border-box;
+  padding: 0 10%;
+  height: 10%;
+  width: 100%;
+  outline: 0.1rem solid rgb(255, 255, 255);
 }
-.example1{
-    position: absolute;
-    top:2rem;
-    height: .1rem;
-    width: 100%;
-    margin: auto;
-    background-color: rgb(255, 0, 0);
+
+.LogoContainer {
+  display: inline-block;
+  box-sizing: border-box;
+  width: 10%;
+  height: 100%;
 }
-.example2{
-    position: absolute;
-    top:1rem;
-    width: 100%;
-    height: .1rem;
-    margin: auto;
-    background-color: rgb(0, 255, 255);
+
+/*Options*/
+.OptionsContainer {
+  width: 50%;
+  height: 100%;
+  padding: 4vh 0;
+  box-sizing: border-box;
+  font-size: 1.5rem;
+  float: right;
 }
-.example3{
-    position: absolute;
-    bottom:2rem;
-    height: .1rem;
-    width: 100%;
-    margin: auto;
-    background-color: rgb(255, 0, 0);
+
+.OptionsContainer .NavLink {
+  display: inline-block;
+  width: 20%;
+  text-align: center;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  transition: color 0.3s;
 }
-.example4{
-    position: absolute;
-    bottom:1rem;
-    width: 100%;
-    height: .1rem;
-    margin: auto;
-    background-color: rgb(0, 255, 255);
+
+.NavLink-Active {
+  display: inline-block;
+  width: 20%;
+  text-align: center;
+  text-decoration: none;
+  color: rgb(0, 255, 255);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  transition: color 0.3s;
 }
+
+.NavLink:hover {
+  color: rgb(0, 255, 255);
+  transition: color 0.3s;
+}
+
+.NavLink:not(:hover) {
+  color: rgb(255, 255, 255);
+  transition: color 0.3s;
+}
+
+.Todo {
+  width: 100%;
+  height: 100%;
+  color: rgb(255, 255, 255);
+  font-size: 3rem;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 700;
+  text-align: center;
+  box-sizing: border-box;
+  padding: 20%;
+}
+
+/*# sourceMappingURL=styles.css.map */
