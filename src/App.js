@@ -20,6 +20,7 @@ export default function App() {
           <Route path="/Work" element={<Todo/>}></Route>
           <Route path="/Extra" element={<Todo/>}></Route>
           <Route path="/" element={<Todo/>}></Route>
+          <Route path="/index.html" element={<Todo/>}></Route>
         </Routes>
       </Router>
     </div>
