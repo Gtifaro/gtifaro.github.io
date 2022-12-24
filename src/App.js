@@ -10,7 +10,7 @@ import AboutContainer from "./components/About/About"
 import SkillsContainer from "./components/Skills/Skills"
 import WorkContainer from "./components/Work/Work"
 import ContactContainer from "./components/Contact/Contact"
-import ExtraContainer from "./components/Extra/Extra"
+import BlogContainer from "./components/Blog/Blog"
 import HomeContainer from "./components/Home/Home"
 
 export default function App() {
@@ -23,7 +23,7 @@ export default function App() {
           <Route path="/Skills" element={<SkillsContainer/>}></Route>
           <Route path="/Contact" element={<WorkContainer/>}></Route>
           <Route path="/Work" element={<ContactContainer/>}></Route>
-          <Route path="/Blog" element={<ExtraContainer/>}></Route>
+          <Route path="/Blog" element={<BlogContainer/>}></Route>
           <Route path="/" element={<HomeContainer/>}></Route>
           <Route path="/index.html" element={<HomeContainer/>}></Route>
         </Routes>

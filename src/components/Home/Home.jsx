@@ -3,7 +3,8 @@ import React from 'react';
 const HomeContainer = () => {
     return (
         <div className='Home'>
-            Home - Work in progress...
+            <div className='Description'>DESC</div>
+            <div className='Imgs'>IMG</div>
         </div>
     );
 };

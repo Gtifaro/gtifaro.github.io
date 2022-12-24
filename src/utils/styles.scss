@@ -15,6 +15,7 @@ body{
     height: 100vh;
     box-sizing: border-box;
     background-color: $colorPrincipal;
+    min-width:max-content;
 }
 
 .HeaderContainer{
@@ -25,48 +26,61 @@ body{
     height: 10%;
     width: 100%;
     outline: .1rem solid $textColor;
+    min-width:max-content;
+    .LogoContainer{
+        display: inline-block;
+        box-sizing: border-box;
+        width: 10%;
+        height: 100%;
+        min-width:max-content;
+        .logo{
+            height: 90%;
+            padding-top: 10%;
+            box-sizing: border-box;
+        }
+    }
+    /*Options*/
+    .OptionsContainer{
+        width: 50%;
+        height: 100%;
+        padding: 3.5vh 0;
+        box-sizing: border-box;
+        font-size: $tamagnoFuente;
+        float: right;
+        min-width:max-content;
+    }
+    .OptionsContainer .NavLink{
+        display:inline-block;
+        width: 20%;
+        text-align: center;
+        text-decoration: none;
+        color: $textColor;
+        font-family: $fuente;
+        transition: color $transitionDuration;
+        min-width:max-content;
+    }
+    .NavLink-Active{
+        display:inline-block;
+        width: 20%;
+        text-align: center;
+        text-decoration: none;
+        color: $colorSecundario2;
+        font-family: $fuente;
+        transition: color $transitionDuration;
+        min-width:max-content;
+    }
+    .NavLink:hover{
+        color:$colorSecundario2;
+        transition: color $transitionDuration;
+        min-width:max-content;
+    }
+    .NavLink:not(:hover){
+        color:$textColor;
+        transition: color $transitionDuration;
+        min-width:max-content;
+    }
 }
-.LogoContainer{
-    display: inline-block;
-    box-sizing: border-box;
-    width: 10%;
-    height: 100%;
-}
-/*Options*/
-.OptionsContainer{
-    width: 50%;
-    height: 100%;
-    padding: 3.5vh 0;
-    box-sizing: border-box;
-    font-size: $tamagnoFuente;
-    float: right;
-}
-.OptionsContainer .NavLink{
-    display:inline-block;
-    width: 20%;
-    text-align: center;
-    text-decoration: none;
-    color: $textColor;
-    font-family: $fuente;
-    transition: color $transitionDuration;
-}
-.NavLink-Active{
-    display:inline-block;
-    width: 20%;
-    text-align: center;
-    text-decoration: none;
-    color: $colorSecundario2;
-    font-family: $fuente;
-    transition: color $transitionDuration;
-}
-.NavLink:hover{
-    color:$colorSecundario2;
-    transition: color $transitionDuration;
-}
-.NavLink:not(:hover){
-    color:$textColor;
-    transition: color $transitionDuration;
-}
+
 
 @mixin content(){
     width: 100%;
@@ -102,5 +116,17 @@ body{
 }
 .Home{
     @include content();
+    .Description{
+        box-sizing: border-box;
+        width: 50%;
+        height: 100%;
+        float: left;    
+    }
+    .Imgs{
+        box-sizing: border-box;
+        width: 50%;
+        height: 100%;
+        float: left;
+    }
     
 }
