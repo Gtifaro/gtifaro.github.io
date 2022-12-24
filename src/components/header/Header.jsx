@@ -8,14 +8,14 @@ const Header = () => {
         <React.Fragment>
             <div className='HeaderContainer'>
                 <div className='LogoContainer'>
-                    <NavLink className='NavLink' to="/"><img className="logo" alt="Logo"/></NavLink>
+                    <NavLink title="Home" className='NavLink' to="/"><img className="logo" alt="Logo"/></NavLink>
                 </div>
                 <div className='OptionsContainer'>
-                    <NavLink className={(data) => data.isActive ? 'NavLink-Active': 'NavLink'} to="/About">About</NavLink>
-                    <NavLink className={(data) => data.isActive ? 'NavLink-Active': 'NavLink'} to="/Skills">Skills</NavLink>
-                    <NavLink className={(data) => data.isActive ? 'NavLink-Active': 'NavLink'} to="/Work">Work</NavLink>
-                    <NavLink className={(data) => data.isActive ? 'NavLink-Active': 'NavLink'} to="/Contact">Contact</NavLink>
-                    <NavLink className={(data) => data.isActive ? 'NavLink-Active': 'NavLink'} to="/Extra">Extra</NavLink>
+                    <NavLink title="More about me" className={(data) => data.isActive ? 'NavLink-Active': 'NavLink'} to="/About">About</NavLink>
+                    <NavLink title="Some of my skills" className={(data) => data.isActive ? 'NavLink-Active': 'NavLink'} to="/Skills">Skills</NavLink>
+                    <NavLink title="Previus proyects" className={(data) => data.isActive ? 'NavLink-Active': 'NavLink'} to="/Work">Work</NavLink>
+                    <NavLink title="Start a conversation" className={(data) => data.isActive ? 'NavLink-Active': 'NavLink'} to="/Contact">Contact</NavLink>
+                    <NavLink title="My experiments" className={(data) => data.isActive ? 'NavLink-Active': 'NavLink'} to="/Blog">Blog</NavLink>
                 </div>
             </div>
         </React.Fragment>

@@ -32,7 +32,7 @@ body {
 .OptionsContainer {
   width: 50%;
   height: 100%;
-  padding: 4vh 0;
+  padding: 3.5vh 0;
   box-sizing: border-box;
   font-size: 1.5rem;
   float: right;
@@ -72,12 +72,81 @@ body {
   width: 100%;
   height: 100%;
   color: rgb(255, 255, 255);
-  font-size: 3rem;
+  font-size: 1.5rem;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  font-weight: 700;
-  text-align: center;
   box-sizing: border-box;
+  padding: 5% 10%;
+  user-select: none;
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 700;
   padding: 20%;
+}
+
+.About {
+  width: 100%;
+  height: 100%;
+  color: rgb(255, 255, 255);
+  font-size: 1.5rem;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  box-sizing: border-box;
+  padding: 5% 10%;
+  user-select: none;
+}
+
+.Skills {
+  width: 100%;
+  height: 100%;
+  color: rgb(255, 255, 255);
+  font-size: 1.5rem;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  box-sizing: border-box;
+  padding: 5% 10%;
+  user-select: none;
+}
+
+.Work {
+  width: 100%;
+  height: 100%;
+  color: rgb(255, 255, 255);
+  font-size: 1.5rem;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  box-sizing: border-box;
+  padding: 5% 10%;
+  user-select: none;
+}
+
+.Contact {
+  width: 100%;
+  height: 100%;
+  color: rgb(255, 255, 255);
+  font-size: 1.5rem;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  box-sizing: border-box;
+  padding: 5% 10%;
+  user-select: none;
+}
+
+.Blog {
+  width: 100%;
+  height: 100%;
+  color: rgb(255, 255, 255);
+  font-size: 1.5rem;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  box-sizing: border-box;
+  padding: 5% 10%;
+  user-select: none;
+}
+
+.Home {
+  width: 100%;
+  height: 100%;
+  color: rgb(255, 255, 255);
+  font-size: 1.5rem;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  box-sizing: border-box;
+  padding: 5% 10%;
+  user-select: none;
 }
 
 /*# sourceMappingURL=styles.css.map */
