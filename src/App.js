@@ -21,8 +21,8 @@ export default function App() {
         <Routes>
           <Route path="/About" element={<AboutContainer/>}></Route>
           <Route path="/Skills" element={<SkillsContainer/>}></Route>
-          <Route path="/Contact" element={<WorkContainer/>}></Route>
-          <Route path="/Work" element={<ContactContainer/>}></Route>
+          <Route path="/Contact" element={<ContactContainer/>}></Route>
+          <Route path="/Work" element={<WorkContainer/>}></Route>
           <Route path="/Blog" element={<BlogContainer/>}></Route>
           <Route path="/" element={<HomeContainer/>}></Route>
           <Route path="/index.html" element={<HomeContainer/>}></Route>
