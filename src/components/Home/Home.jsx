@@ -16,7 +16,7 @@ const HomeContainer = () => {
                 <NavLink className="StartWorking" to="/Contact">¡Start talking!</NavLink>
             </div>
             <div className='Imgs'>
-                <img src={HomeImg}/>
+                <img alt="My principal skills" src={HomeImg}/>
             </div>
         </div>
     );
