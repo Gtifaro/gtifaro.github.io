@@ -17,7 +17,7 @@ body {
   position: absolute;
   box-sizing: border-box;
   padding: 0 10%;
-  height: 10%;
+  height: 7%;
   width: 100%;
   box-shadow: 0 0 1.5rem rgb(0, 255, 255);
   min-width: max-content;
@@ -38,7 +38,7 @@ body {
 .HeaderContainer .OptionsContainer {
   width: 50%;
   height: 100%;
-  padding: 3.5vh 0;
+  padding: 2vh 0;
   box-sizing: border-box;
   font-size: 1.5rem;
   float: right;
@@ -345,7 +345,6 @@ body {
 .Home .Description .ShortDesc {
   margin-bottom: 4vh;
   padding: 0;
-  text-shadow: 0 0 0.2rem rgb(255, 255, 255);
 }
 .Home .Description .BigDesc {
   margin: 4vh 0;
