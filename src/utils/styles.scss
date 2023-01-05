@@ -3,7 +3,7 @@ $colorPrincipal: rgb(20, 20, 20);
 $colorSecundario1: rgb(255, 0, 0);
 $colorSecundario2: rgb(0, 255, 255);
 $fuente: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;;
-$tamagnoFuente: 1.5rem;
+$tamagnoFuente: 24px;
 $transitionDuration: .3s;
 
 @mixin btnAnimation () {
@@ -28,9 +28,8 @@ body{
     position: absolute;
     box-sizing: border-box;
     padding: 0 10%;
-    height: 7%;
+    height: 56px;
     width: 100%;
-    box-shadow: 0 0 1.5rem $colorSecundario2;
     min-width:max-content;
     .LogoContainer{
         display: inline-block;
@@ -39,8 +38,8 @@ body{
         height: 100%;
         min-width:max-content;
         .logo{
-            height: 90%;
-            padding-top: 10%;
+            height: 95%;
+            padding-top: 2.5%;
             box-sizing: border-box;
         }
     }
@@ -48,7 +47,7 @@ body{
     .OptionsContainer{
         width: 50%;
         height: 100%;
-        padding: 2vh 0;
+        padding: 12px 0;
         box-sizing: border-box;
         font-size: $tamagnoFuente;
         float: right;
@@ -69,16 +68,16 @@ body{
         width: 20%;
         text-align: center;
         text-decoration: none;
-        color: $colorSecundario2;
         font-family: $fuente;
         transition: color $transitionDuration;
         min-width:max-content;
+        color: $colorSecundario2;
         text-shadow: 0 0 1rem $colorSecundario2;
     }
     .NavLink:hover{
-        color:$colorSecundario2;
         transition: color $transitionDuration;
         min-width:max-content;
+        color:$colorSecundario2;
         text-shadow: 0 0 1rem $colorSecundario2;
     }
     .NavLink:not(:hover){
@@ -97,7 +96,7 @@ body{
     font-size: $tamagnoFuente;
     font-family: $fuente;
     box-sizing: border-box;
-    padding-top: 10vh;
+    padding-top: 6vh;
     user-select: none
 }
 .Todo{
@@ -114,88 +113,90 @@ body{
         width: 60vw;
         height: 100%;
         float: left;
-        padding: 5% 5% 5% 10%;
+        padding: 6% 4% 4% 12%;
         .StartWorking:not(:hover){
             @include btnAnimation();
-            width: 11vw;
+            width: 12vw;
             height: 6vh;
             display: inline-block;
             text-align: center;
-            border-radius: 10px;
+            border-radius: 12px;
             text-decoration: none;
             font-family: $fuente;
             font-size: $tamagnoFuente;
             color: $colorSecundario2;
-            padding: 1vh 0vw;
+            padding: .8vh 0vw;
             box-sizing: border-box;
             border: 2px solid $colorSecundario2;
-            margin-left: .5vw;
+            margin-left: .4vw;
             font-weight: 500;
             background-color: transparent;
-            box-shadow: 0 0 .5rem $colorSecundario2;
-            text-shadow: 0 0 .2rem $colorSecundario2;
+            box-shadow: 0 0 .4rem $colorSecundario2;
         }
         .WhoIsMe:not(:hover){
             @include btnAnimation();
-            width: 22vw;
+            width: 24vw;
             height: 6vh;
             display: inline-block;
             text-align: center;
-            border-radius: 10px;
+            border-radius: 12px;
             text-decoration: none;
             font-family: $fuente;
             font-size: $tamagnoFuente;
             color: $colorSecundario2;
-            padding: 1vh 0vw;
+            padding: .8vh 0vw;
             box-sizing: border-box;
             border: 2px solid $colorSecundario2;
-            margin-right: .5vw;
+            margin-right: .4vw;
             font-weight: 500;
-            box-shadow: 0 0 .5rem $colorSecundario2;
-            text-shadow: 0 0 .2rem $colorSecundario2;
+            box-shadow: 0 0 .4rem $colorSecundario2;
         }
         .StartWorking:hover{
             @include btnAnimation();
             background-color: $colorSecundario2;
-            width: 11vw;
+            width: 12vw;
             height: 6vh;
             display: inline-block;
             text-align: center;
-            border-radius: 10px;
+            border-radius: 12px;
             text-decoration: none;
             font-family: $fuente;
             font-size: $tamagnoFuente;
             color: $colorPrincipal;
-            padding: 1vh 0vw;
+            padding: .8vh 0vw;
             box-sizing: border-box;
             border: 2px solid $colorSecundario2;
-            margin-left: .5vw;
+            margin-left: .4vw;
             font-weight: 700;
-            box-shadow: 0 0 1rem $colorSecundario2;
+            box-shadow: 0 0 .8rem $colorSecundario2;
         }
         .WhoIsMe:hover{
             @include btnAnimation();
             background-color: $colorSecundario2;
-            width: 22vw;
+            width: 24vw;
             height: 6vh;
             display: inline-block;
             text-align: center;
-            border-radius: 10px;
+            border-radius: 12px;
             text-decoration: none;
             font-family: $fuente;
             font-size: $tamagnoFuente;
             color: $colorPrincipal;
-            padding: 1vh 0vw;
+            padding: .8vh 0vw;
             box-sizing: border-box;
             border: 2px solid $colorSecundario2;
-            margin-right: .5vw;
+            margin-right: .4vw;
             font-weight: 700;
-            box-shadow: 0 0 1rem $colorSecundario2;
+            box-shadow: 0 0 .8rem $colorSecundario2;
+        }
+        .title{
+            margin: 4vh 0;
+            padding: 0;
+            font-size: $tamagnoFuente * 2;
         }
         .BigDesc{
             margin: 4vh 0;
             padding: 0;
-            text-shadow: 0 0 .2rem $textColor;
             a{
                 text-decoration: none;
                 color: $colorSecundario2;
@@ -207,7 +208,7 @@ body{
         width: 40vw;
         height: 100%;
         float: left;
-        padding: 5% 10% 5% 5%;
+        padding: 6% 12% 6% 6%;
     }
 }
 .Skills{
@@ -222,7 +223,6 @@ body{
 .Blog{
     @include content();
 }
-
 .Home{
     @include content();
     .Description{
@@ -230,108 +230,100 @@ body{
         width: 50vw;
         height: 100%;
         float: left;
-        padding: 10% 5% 15% 10%;
+        padding: 12% 4% 16% 12%;
         .StartWorking:not(:hover){
             @include btnAnimation();
-            width: 11vw;
+            width: 12vw;
             height: 6vh;
             display: inline-block;
             text-align: center;
-            border-radius: 10px;
+            border-radius: 12px;
             text-decoration: none;
             font-family: $fuente;
             font-size: $tamagnoFuente;
             color: $colorSecundario2;
-            padding: 1vh 0vw;
+            padding: .8vh 0vw;
             box-sizing: border-box;
             border: 2px solid $colorSecundario2;
-            margin-left: .5vw;
+            margin-left: .4vw;
             font-weight: 500;
             background-color: transparent;
-            box-shadow: 0 0 .5rem $colorSecundario2;
-            text-shadow: 0 0 .2rem $colorSecundario2;
+            box-shadow: 0 0 .4rem $colorSecundario2;
         }
         .WhoIsMe:not(:hover){
             @include btnAnimation();
-            width: 22vw;
+            width: 20vw;
             height: 6vh;
             display: inline-block;
             text-align: center;
-            border-radius: 10px;
+            border-radius: 12px;
             text-decoration: none;
             font-family: $fuente;
             font-size: $tamagnoFuente;
             color: $colorSecundario2;
-            padding: 1vh 0vw;
+            padding: .8vh 0vw;
             box-sizing: border-box;
             border: 2px solid $colorSecundario2;
-            margin-right: .5vw;
+            margin-right: .4vw;
             font-weight: 500;
-            box-shadow: 0 0 .5rem $colorSecundario2;
-            text-shadow: 0 0 .2rem $colorSecundario2;
+            box-shadow: 0 0 .4rem $colorSecundario2;
         }
         .StartWorking:hover{
             @include btnAnimation();
             background-color: $colorSecundario2;
-            width: 11vw;
+            width: 12vw;
             height: 6vh;
             display: inline-block;
             text-align: center;
-            border-radius: 10px;
+            border-radius: 12px;
             text-decoration: none;
             font-family: $fuente;
             font-size: $tamagnoFuente;
             color: $colorPrincipal;
-            padding: 1vh 0vw;
+            padding: .8vh 0vw;
             box-sizing: border-box;
             border: 2px solid $colorSecundario2;
-            margin-left: .5vw;
+            margin-left: .4vw;
             font-weight: 700;
-            box-shadow: 0 0 1rem $colorSecundario2;
+            box-shadow: 0 0 .8rem $colorSecundario2;
         }
         .WhoIsMe:hover{
             @include btnAnimation();
             background-color: $colorSecundario2;
-            width: 22vw;
+            width: 20vw;
             height: 6vh;
             display: inline-block;
             text-align: center;
-            border-radius: 10px;
+            border-radius: 12px;
             text-decoration: none;
             font-family: $fuente;
             font-size: $tamagnoFuente;
             color: $colorPrincipal;
-            padding: 1vh 0vw;
+            padding: .8vh 0vw;
             box-sizing: border-box;
             border: 2px solid $colorSecundario2;
-            margin-right: .5vw;
+            margin-right: .4vw;
             font-weight: 700;
-            box-shadow: 0 0 1rem $colorSecundario2;
+            box-shadow: 0 0 .8rem $colorSecundario2;
         }
         .ShortDesc{
             margin-bottom: 4vh;
             padding: 0;
-
         }
         .BigDesc{
             margin: 4vh 0;
             padding: 0;
-            text-shadow: 0 0 .2rem $textColor;
-
+            font-size: $tamagnoFuente * 2;
         }
-
     }
     .Imgs{
         box-sizing: border-box;
         width: 50vw;
         height: 100%;
         float: left;
-        padding-top: 10rem;
-        padding-left: 5rem;
-        padding-right: 10rem;
-        padding-bottom: 15rem;
+        padding: 8% 8% 16% 4%;
         img{
-            width: 35vw;
+            width: 36vw;
             height: auto;
         }
     }
