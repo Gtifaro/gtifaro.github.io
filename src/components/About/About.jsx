@@ -1,5 +1,6 @@
 import React from 'react';
 import {NavLink} from "react-router-dom";
+import History from "../../utils/img/MyHistory.png";
 
 const AboutContainer = () => {
     return (
@@ -13,7 +14,7 @@ const AboutContainer = () => {
                 <NavLink className="StartWorking" to="/Contact">¡Start creating!</NavLink>
             </div>
             <div className='Img'>
-
+                <img src={History} alt="My history" title='My history in one image'/>
             </div>
         </div>
     );
