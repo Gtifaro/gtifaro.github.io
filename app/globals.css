@@ -1,3 +1,11 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+::-webkit-scrollbar{
+    display: none;
+}
+
+.shadow-navbar{
+    box-shadow: 0 0 .66vw .1vw cyan;
+}
