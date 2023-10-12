@@ -11,7 +11,7 @@ export default function Navbar({ children }) {
               <Image
                 alt="Gabrial Antonio Rodríguez Tífaro - Gtifaro logo"
                 src="/G.svg"
-                className="w-full select-none cursor-pointer"
+                className="w-full  select-none cursor-pointer"
                 width={"1"}
                 height={"1"}
               />
@@ -47,9 +47,9 @@ export default function Navbar({ children }) {
             </Link>
             <Link href="/">
               <Image
-                alt="Gabrial Antonio Rodríguez Tífaro - Gtifaro logo"
-                src="/G.svg"
-                className="w-full select-none cursor-pointer "
+                alt="Contact me - Start talking"
+                src="/Contact.svg"
+                className="w-[70%] mx-auto select-none cursor-pointer "
                 width={"1"}
                 height={"1"}
               />
@@ -61,6 +61,15 @@ export default function Navbar({ children }) {
                 alt="Gabrial Antonio Rodríguez Tífaro - Gtifaro logo"
                 src="/G.svg"
                 className="w-full select-none cursor-pointer"
+                width={"1"}
+                height={"1"}
+              />
+            </Link>
+            <Link href="/">
+              <Image
+                alt="Gabrial Antonio Rodríguez Tífaro - Gtifaro logo"
+                src="/In.svg"
+                className="w-[70%] mx-auto mb-5 select-none cursor-pointer"
                 width={"1"}
                 height={"1"}
               />
