@@ -27,52 +27,42 @@ const navItems = [
 export default function NavBar() {
   let pathname = usePathname() || "/";
 
-  if (pathname.includes("/contact")) {
-    pathname = "/contact";
-  }
-  if (pathname.includes("/work")) {
-    pathname = "/work";
-  }
-  if (pathname.includes("/about")) {
-    pathname = "/about";
-  }
-  if (pathname.includes("/")) {
-    pathname = "/";
-  }
-
- 
   const [hoveredPath, setHoveredPath] = useState(pathname);
   const [scrollY, setScrollY] = useState(0);
-  
+
   useEffect(() => {
     function handleScroll() {
-      setScrollY(window.scrollY > 10)
+      setScrollY(window.scrollY > 10);
     }
-    window.addEventListener("scroll", handleScroll); 
+    window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
-  }, [scrollY])
+  }, [scrollY]);
 
   return (
     <div className="p-[0.4rem] w-full mb-12 fixed top-[1vh] z-[100]">
-      <nav className={`flex gap-2 relative justify-center w-fit mx-auto rounded-full px-2 py-1 z-[100] ${
-                scrollY ? "backdrop-blur-sm" : ""
-              }`}>
+      <nav
+        className={`flex gap-2 relative justify-center w-fit mx-auto rounded-full px-2 py-1 z-[100] ${
+          scrollY ? "backdrop-blur-sm" : ""
+        }`}
+      >
         {navItems.map((item) => {
-          const isActive = item.path === hoveredPath;
+          const isActive = item.path === pathname;
+
           return (
             <Link
               key={item.path}
-              className={`px-4 py-2 rounded-md text-sm lg:text-base relative no-underline duration-300 ease-in float-left ${
-                isActive ? scrollY ? "text-zinc-100": "text-zinc-200" : scrollY ? "text-zinc-300": "text-zinc-400"
+              className={`px-4 py-2 rounded-full text-sm lg:text-base relative no-underline duration-300 ease-in ${
+                isActive ? "text-zinc-100" : "text-zinc-400"
               }`}
               data-active={isActive}
               href={item.path}
-              onClick={() => {setHoveredPath(item.path)}}
+              onMouseOver={() => setHoveredPath(item.path)}
+              onMouseLeave={() => setHoveredPath(pathname)}
             >
               <span>{item.name}</span>
               {item.path === hoveredPath && (
                 <motion.div
-                  className="absolute bottom-0 left-0 h-full bg-stone-800 rounded-full -z-10"
+                  className="absolute bottom-0 left-0 h-full bg-stone-800/80 rounded-full -z-10"
                   layoutId="navbar"
                   aria-hidden="true"
                   style={{
