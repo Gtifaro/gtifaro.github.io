@@ -39,9 +39,9 @@ export default function NavBar() {
   }, [scrollY]);
 
   return (
-    <div className="p-[0.4rem] w-full mb-12 fixed top-[1vh] z-[100]">
+    <div className="p-[1vh] w-full fixed z-[100]">
       <nav
-        className={`flex gap-2 relative justify-center w-fit mx-auto rounded-full px-2 py-1 z-[100] backdrop-blur-md`}
+        className={`flex relative justify-center w-fit mx-auto rounded-full px-[1vh] py-[.5vh] z-[100] backdrop-blur-md`}
       >
         {navItems.map((item) => {
           const isActive = item.path === pathname;
@@ -49,10 +49,10 @@ export default function NavBar() {
           return (
             <Link
               key={item.path}
-              className={`px-4 py-2 rounded-full text-sm lg:text-base relative no-underline duration-300 ease-in ${
-                item.path === hoveredPath ? "text-white" : "text-white/50"
+              className={`px-[2vh] py-[1vh] rounded-full text-[1.5vh] relative no-underline duration-300 ease-in ${
+                item.path === hoveredPath ? "text-[#00FFFF]" : "text-[#008A8A]"
               }`}
-              data-active={isActive}
+              data-active={isActive}  
               href={item.path}
               onMouseOver={() => setHoveredPath(item.path)}
               onMouseLeave={() => setHoveredPath(pathname)}
@@ -60,7 +60,7 @@ export default function NavBar() {
               <span>{item.name}</span>
               {item.path === hoveredPath && (
                 <motion.div
-                  className="absolute bottom-0 left-0 h-full bg-stone-800/80 rounded-full -z-10"
+                  className="absolute bottom-0 left-0 h-full bg-[#282828] rounded-full -z-10"
                   layoutId="navbar"
                   aria-hidden="true"
                   style={{
