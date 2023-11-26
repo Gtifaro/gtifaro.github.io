@@ -41,9 +41,7 @@ export default function NavBar() {
   return (
     <div className="p-[0.4rem] w-full mb-12 fixed top-[1vh] z-[100]">
       <nav
-        className={`flex gap-2 relative justify-center w-fit mx-auto rounded-full px-2 py-1 z-[100] ${
-          scrollY ? "backdrop-blur-sm" : ""
-        }`}
+        className={`flex gap-2 relative justify-center w-fit mx-auto rounded-full px-2 py-1 z-[100] backdrop-blur-md`}
       >
         {navItems.map((item) => {
           const isActive = item.path === pathname;
@@ -52,7 +50,7 @@ export default function NavBar() {
             <Link
               key={item.path}
               className={`px-4 py-2 rounded-full text-sm lg:text-base relative no-underline duration-300 ease-in ${
-                isActive ? "text-zinc-100" : "text-zinc-400"
+                item.path === hoveredPath ? "text-white" : "text-white/50"
               }`}
               data-active={isActive}
               href={item.path}
