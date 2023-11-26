@@ -11,15 +11,15 @@ const navItems = [
     name: "/",
   },
   {
-    path: "/#about",
+    path: "/about",
     name: "About",
   },
   {
-    path: "/#work",
+    path: "/work",
     name: "Work",
   },
   {
-    path: "/#contact",
+    path: "/contact",
     name: "Contact",
   },
 ];
@@ -27,14 +27,14 @@ const navItems = [
 export default function NavBar() {
   let pathname = usePathname() || "/";
 
-  if (pathname.includes("/#contact")) {
-    pathname = "/#contact";
+  if (pathname.includes("/contact")) {
+    pathname = "/contact";
   }
-  if (pathname.includes("/#work")) {
-    pathname = "/#work";
+  if (pathname.includes("/work")) {
+    pathname = "/work";
   }
-  if (pathname.includes("/#about")) {
-    pathname = "/#about";
+  if (pathname.includes("/about")) {
+    pathname = "/about";
   }
   if (pathname.includes("/")) {
     pathname = "/";
@@ -53,7 +53,7 @@ export default function NavBar() {
   }, [scrollY])
 
   return (
-    <div className="p-[0.4rem] w-full rounded-lg mb-12 fixed top-2 z-[100] ">
+    <div className="p-[0.4rem] w-full mb-12 fixed top-[1vh] z-[100]">
       <nav className={`flex gap-2 relative justify-center w-fit mx-auto rounded-full px-2 py-1 z-[100] ${
                 scrollY ? "backdrop-blur-sm" : ""
               }`}>
@@ -62,7 +62,7 @@ export default function NavBar() {
           return (
             <Link
               key={item.path}
-              className={`px-4 py-2 rounded-md text-sm lg:text-base relative no-underline duration-100 ease-in float-left ${
+              className={`px-4 py-2 rounded-md text-sm lg:text-base relative no-underline duration-300 ease-in float-left ${
                 isActive ? scrollY ? "text-zinc-100": "text-zinc-200" : scrollY ? "text-zinc-300": "text-zinc-400"
               }`}
               data-active={isActive}
