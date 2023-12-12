@@ -27,25 +27,27 @@ export default function NavBar() {
 
   const [hoveredPath, setHoveredPath] = useState("#home");
   function handleLoad(scroll, screenY) {
-    if (scroll <= screenY *.5) {
+    if (scroll <= screenY * .5) {
       setHoveredPath("#home")
-    } else if (scroll <= screenY*1.5) {
+    } else if (scroll <= screenY * 1.5) {
       setHoveredPath("#about")
-    } else if (scroll <= (screenY *2.5)) {
+    } else if (scroll <= (screenY * 2.5)) {
       setHoveredPath("#work")
-    } else{
+    } else {
       setHoveredPath("#contact")
     }
   }
+  if (typeof window !== "undefined") {
+    useEffect(() => {
+      window.addEventListener("scroll", () => handleLoad(window.scrollY, window.screen.availHeight));
+      return () => window.removeEventListener("scroll", () => handleLoad(window.scrollY, window.screen.availHeight));
+    }, [window?.scrollY])
 
-  useEffect(() => {
-    window.addEventListener("scroll", () => handleLoad(window.scrollY, window.screen.availHeight));
-    return () => window.removeEventListener("scroll", () => handleLoad(window.scrollY, window.screen.availHeight));
-  }, [window?.scrollY])
+    useEffect(() => {
+      handleLoad(window.scrollY, window.screen.availHeight)
+    }, [])
+  }
 
-  useEffect(() => {
-    handleLoad(window.scrollY, window.screen.availHeight)
-  }, [])
 
   return (
     <div className="p-[1vh] w-full fixed z-[100]">
