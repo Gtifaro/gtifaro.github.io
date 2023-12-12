@@ -37,17 +37,14 @@ export default function NavBar() {
       setHoveredPath("#contact")
     }
   }
-  if (typeof window !== "undefined") {
-    useEffect(() => {
+
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      handleLoad(window.scrollY, window.screen.availHeight)
       window.addEventListener("scroll", () => handleLoad(window.scrollY, window.screen.availHeight));
       return () => window.removeEventListener("scroll", () => handleLoad(window.scrollY, window.screen.availHeight));
-    }, [window?.scrollY])
-
-    useEffect(() => {
-      handleLoad(window.scrollY, window.screen.availHeight)
-    }, [])
-  }
-
+    }
+  }, [])
 
   return (
     <div className="p-[1vh] w-full fixed z-[100]">
