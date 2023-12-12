@@ -3,40 +3,49 @@
 import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
 import { usePathname } from "next/navigation";
-import Link from "next/link";
-
 const navItems = [
   {
-    path: "/",
+    path: "#home",
     name: "/",
   },
   {
-    path: "/about",
+    path: "#about",
     name: "About",
   },
   {
-    path: "/work",
+    path: "#work",
     name: "Work",
   },
   {
-    path: "/contact",
+    path: "#contact",
     name: "Contact",
   },
 ];
 
 export default function NavBar() {
-  let pathname = usePathname() || "/";
+  let pathname = usePathname() || "#home";
 
-  const [hoveredPath, setHoveredPath] = useState(pathname);
-  const [scrollY, setScrollY] = useState(0);
+  const [hoveredPath, setHoveredPath] = useState("#home");
+  function handleLoad(scroll, screenY) {
+    if (scroll <= screenY *.5) {
+      setHoveredPath("#home")
+    } else if (scroll <= screenY*1.5) {
+      setHoveredPath("#about")
+    } else if (scroll <= (screenY *2.5)) {
+      setHoveredPath("#work")
+    } else{
+      setHoveredPath("#contact")
+    }
+  }
 
   useEffect(() => {
-    function handleScroll() {
-      setScrollY(window.scrollY > 10);
-    }
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, [scrollY]);
+    window.addEventListener("scroll", () => handleLoad(window.scrollY, window.screen.availHeight));
+    return () => window.removeEventListener("scroll", () => handleLoad(window.scrollY, window.screen.availHeight));
+  }, [window?.scrollY])
+
+  useEffect(() => {
+    handleLoad(window.scrollY, window.screen.availHeight)
+  }, [])
 
   return (
     <div className="p-[1vh] w-full fixed z-[100]">
@@ -47,15 +56,14 @@ export default function NavBar() {
           const isActive = item.path === pathname;
 
           return (
-            <Link
+            <div
               key={item.path}
-              className={`px-[2vh] py-[1vh] rounded-full text-[1.5vh] relative no-underline duration-300 ease-in ${
-                item.path === hoveredPath ? "text-[#00FFFF]" : "text-[#008A8A]"
-              }`}
-              data-active={isActive}  
+              className={`px-[2vh] py-[1vh] select-none cursor-default rounded-full text-[1.5vh] relative no-underline duration-300 ease-in ${item.path === hoveredPath ? "text-[#00FFFF]" : "text-[#008A8A]"
+                }`}
+              data-active={isActive}
               href={item.path}
-              onMouseOver={() => setHoveredPath(item.path)}
-              onMouseLeave={() => setHoveredPath(pathname)}
+            // onMouseOver={() => setHoveredPath(item.path)}
+            // onMouseLeave={() => setHoveredPath(pathname)}
             >
               <span>{item.name}</span>
               {item.path === hoveredPath && (
@@ -75,7 +83,7 @@ export default function NavBar() {
                   }}
                 />
               )}
-            </Link>
+            </div>
           );
         })}
       </nav>
