@@ -1,8 +1,8 @@
 import "./globals.css";
-import { Inter } from "next/font/google";
+import { Coda as fontStyle } from "next/font/google";
 import Navbar from '../components/Navbar'
 
-const inter = Inter({ subsets: ["latin"] });
+const inter = fontStyle({style: "normal", subsets: ["latin"], weight: "400" });
 
 export const metadata = {
   title: "💻 | Gtifaro - Web Developer | 💻",
