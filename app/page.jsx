@@ -42,8 +42,8 @@ export default function Home() {
               <Link href="/#contact" className="float-right duration-200 w-fit mr-[1vw] py-[.5vw] md:py-[.25vw] px-[1vw] md:px-[.5vw] box-border rounded-[.5vw] md:rounded-[.25vw] hover:text-[#141414] text-[#00FFFF] border-[.1vw] border-[#00FFFF] hover:bg-[#00FFFF] text-[2vw] md:text-[1vw]">Contacto</Link>
             </div>
             <div className="float-left w-fit md:w-full h-auto animate-fade-up animate-once animate-duration-200 animate-delay-500 flex items-center">
-              <a href="https://www.github.com/Gtifaro" target="_blank" className="ml-[1vw] md:ml-[0vw] block"><Github/></a>
-              <a href="https://www.linkedin.com/in/gtifaro" target="_blank" className="ml-[1vw] md:ml-[.5vw] block"><Linkedin/></a>
+              <a href="https://www.github.com/Gtifaro" target="_blank" className="hover:scale-125 duration-200 ml-[1vw] md:ml-[0vw] block w-[4vw] md:w-fit md:h-fit"><Github /></a>
+              <a href="https://www.linkedin.com/in/gtifaro" target="_blank" className="hover:scale-125 duration-200 ml-[1.5vw] md:ml-[1vw] block w-[4vw] md:w-fit md:h-fit"><Linkedin /></a>
             </div>
           </div>
         </div>

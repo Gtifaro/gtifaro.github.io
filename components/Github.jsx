@@ -8,6 +8,7 @@ export default function Github() {
       <Image
         src={GithubSVG}
         alt="Github"
+        className='h-full'
         width={30}
         height={30}
       />

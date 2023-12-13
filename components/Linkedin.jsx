@@ -8,6 +8,7 @@ export default function Linkedin() {
       <Image
         src={LinkedinSVG}
         alt="Linkedin"
+        className='h-full'
         width={30}
         height={30}
       />
