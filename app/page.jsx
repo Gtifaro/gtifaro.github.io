@@ -34,7 +34,7 @@ export default function Home() {
     <main className="w-full bg-[#141414]">
       <div id="home" className="h-screen text-white flex items-center">
         <div className="w-fit mx-auto ">
-          <span className="select-none cursor-default text-[3vw] md:text-[1.5vw] text-[#a1a1a1] block md:text-center font-thin leading-[3vw] md:leading-[1.5vw] animate-fade-down animate-duration-700 animate-ease-in-out">¡Hi! I'm</span>
+          <span className="select-none cursor-default text-[3vw] md:text-[1.5vw] text-[#a1a1a1] block md:text-center font-thin leading-[3vw] md:leading-[1.5vw] animate-fade-down animate-duration-700 animate-ease-in-out">¡Hi! Im</span>
           <span className="select-none cursor-default font-bold text-transparent md:text-center text-[10vw] md:text-[5vw] leading-[10vw] md:leading-[5vw] bg-gradient-to-r from-violet-500 via-blue-500 to-cyan-500 bg-clip-text animate-fade animate-duration-500 animate-ease-in-out animate-delay-[350ms]">Gabriel R. Tífaro</span>
           <span className="select-none cursor-default w-fit md:mx-auto text-[5vw] md:text-[2.5vw] text-left text-white block font-semibold leading-[5vw] md:leading-[2.5vw]">{cursor}<span className={`duration-200 ${finalCursor ? "opacity-100" : "opacity-0"}`}>|</span></span>
           <div className="md:grid md:grid-cols-2 w-full h-auto mt-[1.5vw] md:mt-[1vw] animate-fade-up animate-once animate-duration-700 animate-delay-[500ms]">
