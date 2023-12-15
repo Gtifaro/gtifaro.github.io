@@ -3,6 +3,7 @@
 import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
 import { usePathname } from "next/navigation";
+import Link from "next/link";
 const navItems = [
   {
     path: "#home",
@@ -44,7 +45,7 @@ export default function NavBar() {
       window.addEventListener("scroll", () => handleLoad(window.scrollY, window.screen.availHeight));
       return () => window.removeEventListener("scroll", () => handleLoad(window.scrollY, window.screen.availHeight));
     }
-  }, [])
+  }, [hoveredPath])
 
   return (
     <div className="p-[1vh] w-full fixed z-[100]">
@@ -55,14 +56,12 @@ export default function NavBar() {
           const isActive = item.path === pathname;
 
           return (
-            <div
+            <Link
               key={item.path}
-              className={`px-[2vh] py-[1vh] select-none cursor-default rounded-full text-[1.5vh] relative no-underline duration-300 ease-in ${item.path === hoveredPath ? "text-[#00FFFF]" : "text-[#008A8A]"
+              className={`px-[2vh] py-[1vh] select-none rounded-full text-[1.5vh] relative no-underline duration-300 ease-in ${item.path === hoveredPath ? "text-[#00FFFF]" : "text-[#008A8A]"
                 }`}
               data-active={isActive}
               href={item.path}
-            // onMouseOver={() => setHoveredPath(item.path)}
-            // onMouseLeave={() => setHoveredPath(pathname)}
             >
               <span>{item.name}</span>
               {item.path === hoveredPath && (
@@ -82,7 +81,7 @@ export default function NavBar() {
                   }}
                 />
               )}
-            </div>
+            </Link>
           );
         })}
       </nav>
