@@ -15,7 +15,7 @@ export default function Home() {
   useEffect(() => {
     setTimeout(() => {
       setShow(true)
-    }, 600);
+    }, 500);
   }, [])
 
   useEffect(() => {
@@ -51,7 +51,7 @@ export default function Home() {
         <div id="home" className="h-screen relative text-white flex items-center z-20">
           <div className="w-fit mx-auto">
             <span className="select-none cursor-default text-[3.3vw] sm:text-[2vw] text-[#a1a1a1] block sm:text-center font-thin leading-[4vw] sm:leading-[2vw] animate-fade-down animate-duration-700 animate-ease-in-out">¡Hi! I’m</span>
-            <span className="select-none cursor-default font-bold text-transparent sm:text-center text-[10vw] sm:text-[5vw] leading-[10vw] sm:leading-[5vw] bg-gradient-to-r from-violet-500 via-blue-500 to-cyan-500 bg-clip-text animate-fade animate-duration-500 animate-ease-in-out animate-delay-[350ms]">Gabriel R. Tífaro</span>
+            <span className="select-none cursor-default font-bold text-transparent sm:text-center text-[10vw] sm:text-[5vw] leading-[10vw] sm:leading-[5vw] bg-gradient-to-r from-purple-600 via-blue-600 to-cyan-500 bg-clip-text animate-fade animate-duration-500 animate-ease-in-out animate-delay-[350ms]"><span className="tl">G</span>abriel R. Tífaro</span>
             <span className="select-none cursor-default w-fit sm:mx-auto text-[5vw] sm:text-[2.5vw] text-left text-white block font-semibold leading-[5vw] sm:leading-[2.5vw] animate-fade animate-duration-500 animate-ease-in-out animate-delay-[600ms]">{cursor}<span className={`duration-200 ${finalCursor ? "opacity-100" : "opacity-0"}`}>|</span></span>
             <div className="sm:grid sm:grid-cols-2 w-full h-auto mt-[1.75vw] sm:mt-[1vw] animate-fade-up animate-once animate-duration-500 animate-delay-[1200ms] flex items-center">
               <div className="float-left w-fit sm:w-full h-auto">
