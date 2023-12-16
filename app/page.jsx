@@ -66,7 +66,7 @@ export default function Home() {
       </div>
       <div id="about" className="h-screen relative text-white flex items-center z-20">
         <div className="w-[75vw] sm:w-[29vw] mx-auto h-auto p-[2.5vw] sm:p-[1.5vw] rounded-[1vw] sm:rounded-[.5vw] text-[3.25vw] sm:text-[1.25vw] duration-200 ease-in-out bg-[#101010]">
-          Frontend Developer with over 1 year of experience creating innovative solutions using technologies such as HTML, CSS, JavaScript, among others.<br /><br /> Born in Bogotá, <span className="text-[#ffff47]" >Colo</span><span className="text-[#5555ff]" >mb</span><span className="text-[#F00000]">ia</span>, 21 years ago, and passionate about shaping the future of technology.
+          Frontend Developer with over 1 year of experience creating innovative solutions using technologies such as HTML, CSS, JavaScript, among others.<br /><br /> Born in Bogotá, <span className="text-[#ffff47]" >Colo</span><span className="text-[#5555ff]" >mb</span><span className="text-[#F00000]">ia</span>, 21 years ago, and passionate about creating the future of technology.
         </div>
       </div>
       <div id="work" className="h-screen relative text-white z-20">
