@@ -53,7 +53,7 @@ export default function Home() {
             <span className="select-none cursor-default text-[3.3vw] sm:text-[2vw] text-[#a1a1a1] block sm:text-center font-thin leading-[4vw] sm:leading-[2vw] animate-fade-down animate-duration-700 animate-ease-in-out">¡Hi! I’m</span>
             <span className="select-none cursor-default font-bold text-transparent sm:text-center text-[10vw] sm:text-[5vw] leading-[10vw] sm:leading-[5vw] bg-gradient-to-r from-violet-500 via-blue-500 to-cyan-500 bg-clip-text animate-fade animate-duration-500 animate-ease-in-out animate-delay-[350ms]">Gabriel R. Tífaro</span>
             <span className="select-none cursor-default w-fit sm:mx-auto text-[5vw] sm:text-[2.5vw] text-left text-white block font-semibold leading-[5vw] sm:leading-[2.5vw] animate-fade animate-duration-500 animate-ease-in-out animate-delay-[600ms]">{cursor}<span className={`duration-200 ${finalCursor ? "opacity-100" : "opacity-0"}`}>|</span></span>
-            <div className="sm:grid sm:grid-cols-2 w-full h-auto mt-[1.75vw] sm:mt-[1vw] animate-fade-up animate-once animate-duration-500 animate-delay-[600ms] flex items-center">
+            <div className="sm:grid sm:grid-cols-2 w-full h-auto mt-[1.75vw] sm:mt-[1vw] animate-fade-up animate-once animate-duration-500 animate-delay-[1200ms] flex items-center">
               <div className="float-left w-fit sm:w-full h-auto">
                 <Link href="/#contact" className="float-right duration-200 w-fit mr-[1vw] py-[1vw] px-[2vw] sm:px-[1vw] sm:py-[.5vw] box-border rounded-[1vw] sm:rounded-[.5vw] hover:text-[#141414] text-[#00FFFF] border-[.1px] border-[#00FFFF] hover:bg-[#00FFFF] text-[3vw] sm:text-[1vw]">Contact</Link>
               </div>
@@ -65,7 +65,7 @@ export default function Home() {
           </div>
         </div>
         <div id="about" className="h-screen relative text-white flex items-center z-20">
-          <div className="w-[90vw] sm:w-[25vw] mx-auto h-[30vw] sm:h-auto p-[2.5vw] sm:p-[1.25vw] rounded-[1vw] sm:rounded-[.5vw] text-[3.25vw] sm:text-[1.25vw] duration-200 ease-in-out bg-[#202020]">
+          <div className="w-[90vw] sm:w-[25vw] mx-auto h-[30vw] sm:h-auto p-[2.5vw] sm:p-[1.25vw] rounded-[1vw] sm:rounded-[.5vw] text-[3.25vw] sm:text-[1.25vw] duration-200 ease-in-out bg-[#101010]">
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab atque nihil vero eaque corporis. Numquam error nobis reprehenderit fugit quia consectetur expedita maiores. Provident quis harum velit amet iste nesciunt!
             {/* Desarrollador Frontend con más de 1 año de experiencia creando soluciones innovadoras con tecnologías como HTML, CSS, JavaScript, entre otras. Nacido en Bogotá, Colombia, hace 21 años y apasionado por la creación del futuro de la tecnología. */}
           </div>
