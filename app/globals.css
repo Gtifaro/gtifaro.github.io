@@ -11,3 +11,55 @@
     padding: 0;
     scroll-behavior: smooth;
 }
+
+.starscontainer{
+    position:absolute;
+    height: 400vh;
+    width: 100%;
+    overflow: hidden;
+    background-color: #000000;
+}
+
+.stars{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    pointer-events: none;
+    animation: animate 16s ease-in-out infinite;
+    z-index: 10;
+}
+.stars.stars1{
+    animation-delay: 0s;
+}
+.stars.stars2{
+    animation-delay: -2s;
+}
+.stars.stars3{
+    animation-delay: -4s;
+}
+.stars.stars4{
+    animation-delay: -6s;
+}
+.stars.stars5{
+    animation-delay: -8s;
+}
+.stars.stars6{
+    animation-delay: -10s;
+}
+.stars.stars7{
+    animation-delay: -12s;
+}
+.stars.stars8{
+    animation-delay: -14s;
+}
+
+@keyframes animate {
+    0%, 20%, 40%, 60%, 80%, 100%{
+        opacity: 0%;
+    }
+    10%, 30%, 50%, 70%, 90%{
+        opacity: 50%;
+    }
+}

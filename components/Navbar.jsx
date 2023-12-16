@@ -48,17 +48,16 @@ export default function NavBar() {
   }, [hoveredPath])
 
   return (
-    <div className="p-[1vh] w-full fixed z-[100]">
+    <div className="p-[1vh] sm:p-[1vw] w-full fixed z-[100]">
       <nav
-        className={`flex relative justify-center w-fit mx-auto rounded-full px-[1vh] py-[.5vh] z-[100] backdrop-blur-md`}
+        className={`flex relative justify-center w-fit mx-auto rounded-full px-[1vh] sm:px-[.5vw] py-[.5vh] sm:py-[.25vw] z-[100] backdrop-blur-md`}
       >
         {navItems.map((item) => {
           const isActive = item.path === pathname;
-
           return (
             <Link
               key={item.path}
-              className={`px-[2vh] py-[1vh] select-none rounded-full text-[1.5vh] relative no-underline duration-300 ease-in ${item.path === hoveredPath ? "text-[#00FFFF]" : "text-[#008A8A]"
+              className={`px-[2vh] sm:px-[1vw] py-[1vh] sm:py-[.5vw] select-none rounded-full text-[2vh] sm:text-[1vw] relative no-underline duration-300 ease-in ${item.path === hoveredPath ? "text-[#00FFFF]" : "text-[#008A8A]"
                 }`}
               data-active={isActive}
               href={item.path}
@@ -66,7 +65,7 @@ export default function NavBar() {
               <span>{item.name}</span>
               {item.path === hoveredPath && (
                 <motion.div
-                  className="absolute bottom-0 left-0 h-full bg-[#282828] rounded-full -z-10"
+                  className="absolute bottom-0 left-0 h-full bg-[#202020] rounded-full -z-10"
                   layoutId="navbar"
                   aria-hidden="true"
                   style={{
