@@ -63,3 +63,15 @@
         opacity: 50%;
     }
 }
+
+.hoverfilter:not(:hover){
+    filter: saturate(0);
+    transition: 200ms;
+    transform: scale(1);
+}
+
+.hoverfilter:hover{
+    filter: saturate(1);
+    transition: 200ms;
+    transform: scale(1.1);
+}

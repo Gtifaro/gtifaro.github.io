@@ -65,8 +65,30 @@ export default function Home() {
         </div>
       </div>
       <div id="about" className="h-screen relative text-white flex items-center z-20">
-        <div className="w-[75vw] sm:w-[29vw] mx-auto h-auto p-[2.5vw] sm:p-[1.5vw] rounded-[1vw] sm:rounded-[.5vw] text-[3.25vw] sm:text-[1.25vw] duration-200 ease-in-out bg-[#101010]">
-          Frontend Developer with over 1 year of experience creating innovative solutions using technologies such as HTML, CSS, JavaScript, among others.<br /><br /> Born in Bogotá, <span className="text-[#ffff47]" >Colo</span><span className="text-[#5555ff]" >mb</span><span className="text-[#F00000]">ia</span>, 21 years ago, and passionate about creating the future of technology.
+        <div className="w-fit mx-auto sm:grid sm:grid-cols-2">
+          <div className="w-[75vw] text-center sm:w-[29vw] mx-auto h-auto p-[2.5vw] sm:p-[1.5vw] text-[3.25vw] sm:text-[1.25vw] duration-200 ease-in-out bg-[#101010]">
+            <div className="flex items-center h-full">
+              <div className="grid grid-cols-5 grid-rows-2 w-full h-fit gap-[2vw] sm:gap-[1vw]">
+                <div className="w-full py-[3.5vw] sm:py-[1vw] col-span-5">
+                  Skills
+                </div>
+                <Link title="¿What’s JavaScript?" href="https://wikipedia.org/wiki/JavaScript" target="_blank" className="bg-[url('/skills/javascript.png')] bg-cover bg-center hoverfilter w-full h-[12vw] sm:h-[4vw]" />
+                <Link title="¿What’s TailwindCSS?" href="https://wikipedia.org/wiki/Tailwind_CSS" target="_blank" className="bg-[url('/skills/tailwindcss.png')] bg-cover bg-center hoverfilter w-full h-[12vw] sm:h-[4vw]" />
+                <Link title="¿What’s Node.js?" href="https://wikipedia.org/wiki/Node.js" target="_blank" className="bg-[url('/skills/nodejs.png')] bg-cover bg-center hoverfilter w-full h-[12vw] sm:h-[4vw]" />
+                <Link title="¿What’s HTML?" href="https://wikipedia.org/wiki/HTML" target="_blank" className="bg-[url('/skills/html.png')] bg-cover bg-center hoverfilter w-full h-[12vw] sm:h-[4vw]" />
+                <Link title="¿What’s React.js?" href="https://wikipedia.org/wiki/React_(software)" target="_blank" className="bg-[url('/skills/reactjs.png')] bg-cover bg-center hoverfilter h-[12vw] sm:h-[4vw]" />
+                <Link title="¿What’s Next.js?" href="https://wikipedia.org/wiki/Next.js" target="_blank" className="bg-[url('/skills/nextjs.png')] bg-cover bg-center hoverfilter w-full h-[12vw] sm:h-[4vw]" />
+                <Link title="¿What’s CSS?" href="https://wikipedia.org/wiki/CSS" target="_blank" className="bg-[url('/skills/css.png')] bg-cover bg-center hoverfilter w-full h-[12vw] sm:h-[4vw]" />
+                <Link title="¿What’s Amazon Web Services?" href="https://wikipedia.org/wiki/Amazon_Web_Services" target="_blank" className="bg-[url('/skills/aws.png')] bg-cover bg-center hoverfilter w-full h-[12vw] sm:h-[4vw]" />
+                <Link title="¿What’s Here Technologies?" href="https://wikipedia.org/wiki/Here_Technologies" target="_blank" className="bg-[url('/skills/here.png')] bg-cover bg-center hoverfilter w-full h-[12vw] sm:h-[4vw]" />
+                <Link title="¿What’s Git?" href="https://en.wikipedia.org/wiki/Git" target="_blank" className="bg-[url('/skills/git.png')] bg-cover bg-center hoverfilter w-full h-[12vw] sm:h-[4vw]" />
+              </div>
+            </div>
+          </div>
+          <div className="w-[75vw] sm:w-[29vw] mx-auto h-auto p-[2.5vw] sm:p-[1.5vw] text-[3.25vw] sm:text-[1.25vw] duration-200 ease-in-out bg-[#101010]">
+            Frontend Developer with over 1 year of experience creating innovative solutions using technologies such as HTML, CSS, JavaScript, among others.<br /><br /> Born in Bogotá, <span className="text-[#ffff47]" >Colo</span><span className="text-[#5555ff]" >mb</span><span className="text-[#F00000]">ia</span>, 21 years ago, and passionate about creating the future of technology.
+          </div>
+
         </div>
       </div>
       <div id="work" className="h-screen relative text-white z-20">
