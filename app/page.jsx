@@ -86,11 +86,100 @@ export default function Home() {
             </div>
           </div>
           <div className="w-[75vw] sm:w-[29vw] mx-auto h-auto p-[2.5vw] sm:p-[1.5vw] text-[3.25vw] sm:text-[1.25vw] duration-200 ease-in-out bg-[#101010]">
-            Frontend Developer with +1 year of experience creating innovative solutions using technologies such as HTML, CSS, JavaScript, among others.<br /><br /> Born in Bogotá, <span className="text-[#ffff50]" >Colo</span><span className="text-[#50f5ff]" >mb</span><span className="text-[#ff5050]">ia</span>, {Math.floor((new Date().getTime() - new Date("02/24/2002").getTime())/1000/60/60/24/365)} years ago, and passionate about creating the future of technology.
+            Frontend Developer with +1 year of experience creating innovative solutions using technologies such as HTML, CSS, JavaScript, among others.<br /><br /> Born in Bogotá, <span className="text-[#ffff50]" >Colo</span><span className="text-[#50f5ff]" >mb</span><span className="text-[#ff5050]">ia</span>, {Math.floor((new Date().getTime() - new Date("02/24/2002").getTime()) / 1000 / 60 / 60 / 24 / 365)} years ago, and passionate about creating the future of technology.
           </div>
         </div>
       </div>
-      <div id="work" className="h-screen relative text-white z-20">
+      <div id="work" className="h-screen relative text-white flex items-center z-20">
+        <div className="w-[55vw] h-[85vh] mt-[2.5vw] mx-auto grid grid-cols-3">
+          <div className="w-full h-[45vh] hoverproject">
+            <div className="w-full h-full">
+              <div className="w-full h-1/2 bg-[#222]" />
+              <div className="w-full h-1/2 px-[1vw] py-[.5vw] bg-[#101010]">
+                <div className="w-full h-fit text-[.75vw]">
+                  <span className="w-fit pr-[.5vw] text-[#00FFFF]">Next.js</span>
+                  <span className="w-fit pr-[.5vw] text-[#00FFFF]">AWS</span>
+                  <span className="w-fit pr-[.5vw] text-[#00FFFF]">Here</span>
+                  <span className="w-fit pr-[.5vw] text-[#00FFFF]">CSS</span>
+                  <span className="w-fit pr-[.5vw] text-[#00FFFF]">Node.js</span>
+                </div>
+                <div className="text-[1.5vw]">2Delivery - Rebuild</div>
+                <div className="text-[.65vw]">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquam officiis, porro odit magni maiores ullam, reiciendis, perspiciatis repellat voluptatum molestias quia est nam enim deleniti dolorem qui quidem rem assumenda.</div>
+              </div>
+            </div>
+          </div>
+          <div className="w-full h-[45vh] hoverproject">
+            <div className="w-full h-full">
+              <div className="w-full h-1/2 bg-[#222]" />
+              <div className="w-full h-1/2 px-[1vw] py-[.5vw] bg-[#101010]">
+                <div className="w-full h-fit text-[.75vw]">
+                  <span className="w-fit pr-[.5vw] text-[#00FFFF]">React.js</span>
+                  <span className="w-fit pr-[.5vw] text-[#00FFFF]">AWS</span>
+                  <span className="w-fit pr-[.5vw] text-[#00FFFF]">Here</span>
+                  <span className="w-fit pr-[.5vw] text-[#00FFFF]">CSS</span>
+                  <span className="w-fit pr-[.5vw] text-[#00FFFF]">Node.js</span>
+                </div>
+                <div className="text-[1.5vw]">2Delivery - Legacy</div>
+                <div className="text-[.65vw]">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquam officiis, porro odit magni maiores ullam, reiciendis, perspiciatis repellat voluptatum molestias quia est nam enim deleniti dolorem qui quidem rem assumenda.</div>
+              </div>
+            </div>
+          </div>
+          <div className="w-full h-[45vh] hoverproject">
+            <div className="w-full h-full">
+              <div className="w-full h-1/2 bg-[#222]" />
+              <div className="w-full h-1/2 px-[1vw] py-[.5vw] bg-[#101010]">
+                <div className="w-full h-fit text-[.75vw]">
+                  <span className="w-fit pr-[.5vw] text-[#00FFFF]">Next.js</span>
+                  <span className="w-fit pr-[.5vw] text-[#00FFFF]">TailwindCSS</span>
+                  <span className="w-fit pr-[.5vw] text-[#00FFFF]">Node.js</span>
+                </div>
+                <div className="text-[1.5vw]">Corp. Web Page</div>
+                <div className="text-[.65vw]">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquam officiis, porro odit magni maiores ullam, reiciendis, perspiciatis repellat voluptatum molestias quia est nam enim deleniti dolorem qui quidem rem assumenda.</div>
+              </div>
+            </div>
+          </div>
+          <div className="w-full h-[45vh] hoverproject">
+            <div className="w-full h-full">
+              <div className="w-full h-1/2 bg-[#222]" />
+              <div className="w-full h-1/2 px-[1vw] py-[.5vw] bg-[#101010]">
+                <div className="w-full h-fit text-[.75vw]">
+                  <span className="w-fit pr-[.5vw] text-[#00FFFF]">React.js</span>
+                  <span className="w-fit pr-[.5vw] text-[#00FFFF]">Here</span>
+                  <span className="w-fit pr-[.5vw] text-[#00FFFF]">CSS</span>
+                </div>
+                <div className="text-[1.5vw]">API Viewer</div>
+                <div className="text-[.65vw]">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquam officiis, porro odit magni maiores ullam, reiciendis, perspiciatis repellat voluptatum molestias quia est nam enim deleniti dolorem qui quidem rem assumenda.</div>
+              </div>
+            </div>
+          </div>
+          <div className="w-full h-[45vh] hoverproject">
+            <div className="w-full h-full">
+              <div className="w-full h-1/2 bg-[#222]" />
+              <div className="w-full h-1/2 px-[1vw] py-[.5vw] bg-[#101010]">
+                <div className="w-full h-fit text-[.75vw]">
+                  <span className="w-fit pr-[.5vw] text-[#00FFFF]">React.js</span>
+                  <span className="w-fit pr-[.5vw] text-[#00FFFF]">AWS</span>
+                  <span className="w-fit pr-[.5vw] text-[#00FFFF]">Here</span>
+                  <span className="w-fit pr-[.5vw] text-[#00FFFF]">CSS</span>
+                </div>
+                <div className="text-[1.5vw]">Demos</div>
+                <div className="text-[.65vw]">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquam officiis, porro odit magni maiores ullam, reiciendis, perspiciatis repellat voluptatum molestias quia est nam enim deleniti dolorem qui quidem rem assumenda.</div>
+              </div>
+            </div>
+          </div>
+          <div className="w-full h-[45vh] hoverproject">
+            <div className="w-full h-full">
+              <div className="w-full h-1/2 bg-[#222]" />
+              <div className="w-full h-1/2 px-[1vw] py-[.5vw] bg-[#101010]">
+                <div className="w-full h-fit text-[.75vw]">
+                  <span className="w-fit pr-[.5vw] text-[#00FFFF]">Here</span>
+                </div>
+                <div className="text-[1.5vw]">Support / Consulting</div>
+                <div className="text-[.65vw]">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquam officiis, porro odit magni maiores ullam, reiciendis, perspiciatis repellat voluptatum molestias quia est nam enim deleniti dolorem qui quidem rem assumenda.</div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
       <div id="contact" className="h-screen relative text-white z-20">
       </div>

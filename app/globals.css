@@ -75,3 +75,13 @@
     transition: 200ms;
     transform: scale(1.1);
 }
+
+.hoverproject:not(:hover){
+    padding:.5vw;
+    transition: 200ms;
+}
+
+.hoverproject:hover{
+    padding:0vw;
+    transition: 200ms;
+}
