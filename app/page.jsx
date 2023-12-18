@@ -94,7 +94,7 @@ export default function Home() {
         <div className="w-[55vw] h-[85vh] mt-[2.5vw] mx-auto grid grid-cols-3">
           <div className="w-full h-[45vh] hoverproject">
             <div className="w-full h-full">
-              <div className="w-full h-1/2 bg-[#222]" />
+              <div className="w-full h-1/2 bg-[url('/projects/2deliverynew.jpg')] bg-cover bg-center" />
               <div className="w-full h-1/2 px-[1vw] py-[.5vw] bg-[#101010]">
                 <div className="w-full h-fit text-[.75vw]">
                   <span className="w-fit pr-[.5vw] text-[#00FFFF]">Next.js</span>
@@ -104,13 +104,13 @@ export default function Home() {
                   <span className="w-fit pr-[.5vw] text-[#00FFFF]">Node.js</span>
                 </div>
                 <div className="text-[1.5vw]">2Delivery - Rebuild</div>
-                <div className="text-[.65vw]">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquam officiis, porro odit magni maiores ullam, reiciendis, perspiciatis repellat voluptatum molestias quia est nam enim deleniti dolorem qui quidem rem assumenda.</div>
+                <div className="text-[.75vw]">Rebuilding the 2Delivery application from the legacy version in order to enhance design, functionality, and usability, leveraging the use of new technologies compared to the Legacy version.</div>
               </div>
             </div>
           </div>
           <div className="w-full h-[45vh] hoverproject">
             <div className="w-full h-full">
-              <div className="w-full h-1/2 bg-[#222]" />
+              <div className="w-full h-1/2 bg-[url('/projects/2deliveryold.jpg')] bg-cover bg-center" />
               <div className="w-full h-1/2 px-[1vw] py-[.5vw] bg-[#101010]">
                 <div className="w-full h-fit text-[.75vw]">
                   <span className="w-fit pr-[.5vw] text-[#00FFFF]">React.js</span>
@@ -120,13 +120,13 @@ export default function Home() {
                   <span className="w-fit pr-[.5vw] text-[#00FFFF]">Node.js</span>
                 </div>
                 <div className="text-[1.5vw]">2Delivery - Legacy</div>
-                <div className="text-[.65vw]">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquam officiis, porro odit magni maiores ullam, reiciendis, perspiciatis repellat voluptatum molestias quia est nam enim deleniti dolorem qui quidem rem assumenda.</div>
+                <div className="text-[.75vw]">Assuming responsibility for the design, development, and implementation of new functionalities based on customer needs, always seeking to preserve existing features.</div>
               </div>
             </div>
           </div>
           <div className="w-full h-[45vh] hoverproject">
             <div className="w-full h-full">
-              <div className="w-full h-1/2 bg-[#222]" />
+              <div className="w-full h-1/2 bg-[url('/projects/webpage.jpg')] bg-cover bg-center" />
               <div className="w-full h-1/2 px-[1vw] py-[.5vw] bg-[#101010]">
                 <div className="w-full h-fit text-[.75vw]">
                   <span className="w-fit pr-[.5vw] text-[#00FFFF]">Next.js</span>
@@ -134,13 +134,13 @@ export default function Home() {
                   <span className="w-fit pr-[.5vw] text-[#00FFFF]">Node.js</span>
                 </div>
                 <div className="text-[1.5vw]">Corp. Web Page</div>
-                <div className="text-[.65vw]">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquam officiis, porro odit magni maiores ullam, reiciendis, perspiciatis repellat voluptatum molestias quia est nam enim deleniti dolorem qui quidem rem assumenda.</div>
+                <div className="text-[.75vw]">Together with marketing needs, create an enhanced version with new features of the organization's corporate website based on a previous design in WordPress.</div>
               </div>
             </div>
           </div>
           <div className="w-full h-[45vh] hoverproject">
             <div className="w-full h-full">
-              <div className="w-full h-1/2 bg-[#222]" />
+              <div className="w-full h-1/2 bg-[url('/projects/apiviewer.jpg')] bg-cover bg-center" />
               <div className="w-full h-1/2 px-[1vw] py-[.5vw] bg-[#101010]">
                 <div className="w-full h-fit text-[.75vw]">
                   <span className="w-fit pr-[.5vw] text-[#00FFFF]">React.js</span>
@@ -148,13 +148,13 @@ export default function Home() {
                   <span className="w-fit pr-[.5vw] text-[#00FFFF]">CSS</span>
                 </div>
                 <div className="text-[1.5vw]">API Viewer</div>
-                <div className="text-[.65vw]">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquam officiis, porro odit magni maiores ullam, reiciendis, perspiciatis repellat voluptatum molestias quia est nam enim deleniti dolorem qui quidem rem assumenda.</div>
+                <div className="text-[.75vw]">Autonomously and proactively, create a website capable of reading a JSON file as an API response, displaying it optimally on a map, and adding pop-ups and enriched data.</div>
               </div>
             </div>
           </div>
           <div className="w-full h-[45vh] hoverproject">
             <div className="w-full h-full">
-              <div className="w-full h-1/2 bg-[#222]" />
+              <div className="w-full h-1/2 bg-[url('/projects/demos.jpg')] bg-cover bg-center" />
               <div className="w-full h-1/2 px-[1vw] py-[.5vw] bg-[#101010]">
                 <div className="w-full h-fit text-[.75vw]">
                   <span className="w-fit pr-[.5vw] text-[#00FFFF]">React.js</span>
@@ -163,19 +163,19 @@ export default function Home() {
                   <span className="w-fit pr-[.5vw] text-[#00FFFF]">CSS</span>
                 </div>
                 <div className="text-[1.5vw]">Demos</div>
-                <div className="text-[.65vw]">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquam officiis, porro odit magni maiores ullam, reiciendis, perspiciatis repellat voluptatum molestias quia est nam enim deleniti dolorem qui quidem rem assumenda.</div>
+                <div className="text-[.75vw]">Create multiple demos to showcase the potential of certain technologies such as Here Technologies maps and AWS, in addition to experimenting with new ways to display information and handle APIs.</div>
               </div>
             </div>
           </div>
           <div className="w-full h-[45vh] hoverproject">
             <div className="w-full h-full">
-              <div className="w-full h-1/2 bg-[#222]" />
+              <div className="w-full h-1/2 bg-[url('/projects/support.jpg')] bg-cover bg-center" />
               <div className="w-full h-1/2 px-[1vw] py-[.5vw] bg-[#101010]">
                 <div className="w-full h-fit text-[.75vw]">
                   <span className="w-fit pr-[.5vw] text-[#00FFFF]">Here</span>
                 </div>
                 <div className="text-[1.5vw]">Support / Consulting</div>
-                <div className="text-[.65vw]">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquam officiis, porro odit magni maiores ullam, reiciendis, perspiciatis repellat voluptatum molestias quia est nam enim deleniti dolorem qui quidem rem assumenda.</div>
+                <div className="text-[.75vw]">Provide support and consulting regarding the use of Here Technologies APIs to promote the optimal development of applications using the resources, based on personal experience consuming the services.</div>
               </div>
             </div>
           </div>

@@ -5,8 +5,8 @@ import Navbar from '../components/Navbar'
 const inter = fontStyle({style: "normal", subsets: ["latin"], weight: "400" });
 
 export const metadata = {
-  title: "💻 | Gtifaro - Web Developer | 💻",
-  description: "Hi! I'm Gabriel, web developer, nice to meet you 😄",
+  title: "💻 | Gtifaro - Frontend Developer | 💻",
+  description: "Hi! I'm Gabriel, frontend developer, nice to meet you",
 };
 
 export default function RootLayout({ children }) {
