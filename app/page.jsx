@@ -36,7 +36,7 @@ export default function Home() {
       let interval = window.setInterval(handleWrite, 400);
       return () => window.clearInterval(interval);
     }
-  }, [cursor, finalCursor])
+  }, [cursor, finalCursor, show])
 
   return (
     <main className="w-full bg-[#141414] starscontainer">
@@ -134,7 +134,7 @@ export default function Home() {
                   <span className="w-fit pr-[.5vw] text-[#00FFFF]">Node.js</span>
                 </div>
                 <div className="text-[1.5vw]">Corp. Web Page</div>
-                <div className="text-[.75vw]">Together with marketing needs, create an enhanced version with new features of the organization's corporate website based on a previous design in WordPress.</div>
+                <div className="text-[.75vw]">Together with marketing needs, create an enhanced version with new features of the organization’s corporate website based on a previous design in WordPress.</div>
               </div>
             </div>
           </div>
